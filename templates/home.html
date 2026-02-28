@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boston House Price Prediction</title>
 </head>
 <body>
-    <h1>hello world</h1>
+
+    <h1>Boston House Price Prediction</h1>
+
+    <form action="/predict" method="POST">
+        
+        <input type="text" name="CRIM" placeholder="CRIM" required="required"/><br>
+        <input type="text" name="ZN" placeholder="ZN"><br>
+        <input type="text" name="INDUS" placeholder="INDUS"><br>
+        <input type="text" name="CHAS" placeholder="CHAS"><br>
+        <input type="text" name="NOX" placeholder="NOX"><br>
+        <input type="text" name="RM" placeholder="RM"><br>
+        <input type="text" name="AGE" placeholder="AGE"><br>
+        <input type="text" name="DIS" placeholder="DIS"><br>
+        <input type="text" name="RAD" placeholder="RAD"><br>
+        <input type="text" name="TAX" placeholder="TAX"><br>
+        <input type="text" name="PTRATIO" placeholder="PTRATIO"><br>
+        <input type="text" name="B" placeholder="B"><br>
+        <input type="text" name="LSTAT" placeholder="LSTAT"><br>
+
+        <input type="submit" value="Predict">
+
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+
 </body>
 </html>
