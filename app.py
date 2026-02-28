@@ -1,6 +1,6 @@
 import pickle
 from flask import Flask,request,app,jsonify,url_for,render_template
-from matplotlib import scale
+from matplotlib import scaler
 import numpy as np
 import pandas as pd
 
