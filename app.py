@@ -28,8 +28,7 @@ def predict_api():
     
     new_house = request.json['new_house']
     
-    columns = ['CRIM','ZN','INDUS','CHAS','NOX','RM','AGE',
-               'DIS','RAD','TAX','PTRATIO','B','LSTAT']
+    columns = ['CRIM','ZN','INDUS','CHAS','NOX','RM','AGE','DIS','RAD','TAX','PTRATIO','B','LSTAT']
     
     arr = np.array([new_house[col] for col in columns]).reshape(1, -1)
     
