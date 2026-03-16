@@ -20,7 +20,7 @@ def home():
 #     new_house=request.json
 #     print(np.array(list(new_house.values()))) #.reshape(1,-1)
 #     new_data=scaler.Transform(np.array(list(new_house.values()))) 
-#     output=regmodel.predict(new_data)
+#     output=regmodel.predict(new _data)
 #     print(output[0])
 #     return jsonify(output[0])
 @app.route('/predict_api', methods=['POST'])
